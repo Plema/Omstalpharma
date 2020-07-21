@@ -1,0 +1,313 @@
+textarea {
+    overflow: auto;
+    height: 240px;
+    background-color: $color_white;
+    border-radius: 10px;
+    border: 1px solid #b1b1b1;
+    width: 100%;
+    resize: none;
+    padding: 25px 25px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color_grey;
+    }
+}
+
+.eror {
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13.99px;
+    padding: 0 20px;
+    pointer-events: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #f88977;
+    &.active{
+        display: block;
+    }
+}
+
+
+input:required,
+input,
+input:focus {
+    background-color: $color_white;
+    border-radius: 10px;
+    border: 1px solid #b1b1b1;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    min-height: 64px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 23px;
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color_grey;
+    }
+}
+
+input:invalid{
+    display: block;
+    border-color: #f88977;
+}
+
+.form-action {
+    margin-bottom: 23px;
+}
+
+span.jcf-radio {
+    min-width: 9px;
+    height: 9px;
+    border-radius: 11px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 14px;
+    margin-top: 5px;
+}
+
+span.jcf-radio.jcf-checked {
+    span {
+        width: 4px;
+        height: 4px;
+        background-color: $color_silver;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+
+.section-form {
+    background-image: url(../img/form-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 56px;
+    padding-bottom: 1px;
+    z-index: 5;
+
+    .close {
+        top: 15px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 5;
+
+        &::before,
+        &::after {
+            content: "";
+            top: 6px;
+            left: 0;
+            width: 15px;
+            height: 2px;
+            position: absolute;
+            background: $color_lightGrey;
+        }
+
+        &::before {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 104px;
+        padding-bottom: 107px;
+    }
+
+    .heading {
+        margin: 0 auto 79px;
+        text-align: center;
+        width: 100%;
+
+        .count {
+            color: $color_white;
+            transform: translate(-50%, 0);
+            left: 50%;
+        }
+
+        h4 {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+        h2 {
+            max-width: 249px;
+            margin: 7px auto 31px;
+
+            @media (min-width: 768px) {
+                margin: 7px 0 0;
+                max-width: none;
+            }
+        }
+
+        .btn {
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .form {
+        box-shadow: 0 20px 35px rgba(50, 50, 50, 0.24);
+        border-radius: 20px;
+        background-color: $color_white;
+        padding: 43px 8% 20px;
+        display: none;
+
+        &.active {
+            display: block;
+            position: absolute;
+            width: calc(320px - 30px);
+            top: 0;
+            z-index: 11;
+            padding: 43px 5% 20px;
+        }
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    .form-row {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .form-column {
+        @media (min-width: 768px) {
+            &:nth-of-type(1) {
+                width: 48%;
+            }
+
+            &:nth-of-type(2) {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            &:nth-of-type(1) {
+                width: 30%;
+            }
+
+            &:nth-of-type(2) {
+                width: 66%;
+            }
+        }
+    }
+
+    .form-row-radio {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 7%;
+
+        label {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 13.99px;
+
+            a {
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 13.99px;
+                text-decoration: underline;
+                color: $color_turquoise;
+            }
+        }
+    }
+
+    .form-action {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+        margin-bottom: 17px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: 1280px) {
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+        }
+
+        .btn {
+            min-width: 230px;
+            min-height: 52px;
+            border-radius: 32px;
+            margin-bottom: 15px;
+
+            @media (min-width: 1280px) {
+                margin-left: 14%;
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 1400px) {
+                margin-left: 14%;
+                margin-bottom: 0;
+                min-width: 315px;
+            }
+        }
+    }
+
+    .pocket {
+        width: 243px;
+        min-width: 243px;
+        min-height: 64px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    position: fixed;
+    display: block;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}

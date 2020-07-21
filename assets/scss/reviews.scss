@@ -1,0 +1,76 @@
+@import "libs/variables";
+
+.header {
+    border-bottom: 1px solid $color_lightGrey;
+
+    @media (min-width: 768px) {
+        padding-bottom: 10px;
+    }
+}
+
+.section {
+    padding-top: 24px;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+
+    .heading {
+        @media (min-width: 768px) {
+            padding-bottom: 14px;
+        }
+    }
+
+    .item {
+        margin-bottom: 95px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 72px;
+        }
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        display: block;
+        margin-top: 31px;
+
+        span {
+            font-size: 16px;
+            font-weight: 700;
+            display: block;
+            line-height: 20px;
+        }
+    }
+
+    .date {
+        margin-top: 17px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        display: block;
+        color: #b2b2b2;
+        margin-bottom: 15px;
+
+        @media (min-width: 768px) {
+            margin: 0;
+            width: 100%;
+            text-align: right;
+            margin-top: -15px;
+            margin-bottom: 13px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 27px;
+        max-width: 1177px;
+    }
+}

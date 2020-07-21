@@ -1,0 +1,240 @@
+@import "libs/variables";
+@import "libs/button";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/fonts";
+@import "libs/form";
+@import "libs/popups";
+@import "libs/fontello";
+@import 'libs/normalize.scss';
+
+body {
+    position: relative;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main {
+    padding-top: 126px;
+
+    @media (min-width: 1024px) {
+        padding-top: 173px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        height: 0;
+    }
+}
+
+a {
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.page-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (min-width: 768px) {
+        width: 648px;
+        padding: 0;
+    }
+
+    @media (min-width: 1024px) {
+        width: 864px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1080px;
+    }
+
+    @media (min-width: 1400px) {
+        width: 1160px;
+    }
+
+    @media (min-width: 1600px) {
+        width: 1280px;
+    }
+
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 37px;
+    font-weight: 900;
+
+    @media (min-width: 1024px) {
+        line-height: 107px;
+        font-size: 89px;
+        font-weight: 700;
+    }
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (min-width: 1024px) {
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+.heading {
+    position: relative;
+
+    h4 {
+        color: $color_lightGrey;
+
+        @media (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+        span {
+            position: absolute;
+            top: -5px;
+            left: -18px;
+            font-size: 75px;
+            font-weight: 700;
+            color: $color_lightSilver;
+            z-index: -1;
+
+            @media (min-width: 1024px) {
+                font-size: 135px;
+            }
+        }
+    }
+
+    h2 {
+        margin-top: 7px;
+
+        @media (min-width: 1024px) {
+            margin-top: 20px;
+        }
+
+        span {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: normal;
+            display: block;
+            color: $color_blue;
+
+            @media (min-width: 1024px) {
+                font-size: 36px;
+                display: inline;
+
+            }
+        }
+    }
+}

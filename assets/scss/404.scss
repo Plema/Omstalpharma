@@ -1,0 +1,111 @@
+@import "libs/variables";
+
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    min-height: 100vh;
+    padding: 8% 15px;
+    text-align: center;
+    color: $color_white;
+    background-image: url(../img/404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 480px) {
+        padding: 0;
+        justify-content: center;
+    }
+
+    @media (min-width: 1600px) {
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 137px;
+        font-weight: 700;
+        margin: 7% 0 0%;
+        text-transform: uppercase;
+        line-height: normal;
+
+        @media (min-width: 768px) {
+            font-size: 330px;
+            margin: 7% 0 0%;
+        }
+
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 484px;
+            font-size: 484px;
+            margin-top: 5%;
+            line-height: 490px;
+        }
+    }
+
+    h4 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            font-size: 48px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 17%;
+        margin-bottom: 14px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            margin-top: 34px;
+            margin-bottom: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+
+        a {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $color_white;
+            text-decoration: underline;
+        }
+    }
+
+    .btn {
+        display: flex;
+        margin: 20px auto;
+        max-width: 285px;
+        background-color: $color_white;
+        color: $color_blue;
+        box-shadow: 0 20px 35px rgba(0, 130, 206, 0.24);
+        border-color: $color_white;
+
+        &:hover {
+            background-color: $color_blue;
+            border-color: $color_blue;
+            color: $color_white;
+        }
+    }
+}

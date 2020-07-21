@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/contacts.min.css" data-inprogress="">
+</head>
+
+<body>
+    <!-- Основной контент -->
+    <div class="wrapper">
+        <main class="main">
+
+            <!-- Header -->
+            <include src="assets/templates/header.html"></include>
+
+            <!-- Popup -->
+            <include src="assets/templates/popup.html"></include>
+
+            <!-- bread-crumbs -->
+
+            <div class="bread-crumbs">
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li>/</li>
+                        <li><span>Контакты</span></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- end -->
+
+            <section class="section section-contacts">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Контакты</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="title">Почтовый адрес:</span>
+                            <img src="img/icon-2.png" alt="">
+                            <span class="address">г. Москва, ул. Курская
+                                21 Б, 4 этаж, офис 44-04</span>
+                        </li>
+                        <li>
+                            <span class="title">График работы:</span>
+                            <img src="img/icon-3.png" alt="">
+                            <span class="time">
+                                Пн-Пт 9:00-18:00
+                                <span>Сб-Вс 9:00-18:00</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="title">Телефон:</span>
+                            <img src="img/icon-4.png" alt="">
+                            <a href="tel:+74951234567" class="telephone">+7 (495) 123-45-67</a>
+                        </li>
+                        <li>
+                            <span class="title">По любым вопросам:</span>
+                            <img src="img/icon-5.png" alt="">
+                            <a href="mailto:admin@opstafarma.ru" class="mail">admin@opstafarma.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Form -->
+            <include src="assets/templates/form.html"></include>
+
+        </main>
+
+        <!-- Footer -->
+        <include src="assets/templates/footer.html"></include>
+
+    </div>
+
+
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jcf.min.js"></script>
+    <script src="js/jcf.radio.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>jcf.replaceAll();</script>
+
+
+
+</body>
+
+</html>
