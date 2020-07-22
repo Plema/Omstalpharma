@@ -26,6 +26,7 @@
         height: 100%;
         height: auto;
         padding: 0;
+        border-radius: 20px;
     }
 
     .close {
@@ -70,7 +71,7 @@
 
 .modall-politic {
     .modall-body {
-        background-color: #dae5ee;
+        background-color: $color_white;
     }
 
     .close {
@@ -89,7 +90,7 @@
         padding: 20px;
         overflow-y: scroll;
         max-height: 291px;
-        background-color: $color_white;
+        background-color: $color_lightSilver;
         margin: 20px;
 
         h2 {
