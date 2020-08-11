@@ -36,6 +36,12 @@
     }
 }
 
+.header{
+    @media (min-width: 1024px) {
+    padding-bottom: 10px;
+    }
+}
+
 .section {
     &-hero {
         min-height: 401px;
@@ -1196,13 +1202,17 @@
                 @media (min-width: 480px) {
                     width: calc(100% - 10px);
                     padding: 122px 15px 0 20px;
-                    margin: 86px 5px;
+                    margin: 86px 5px 20px;
                     max-width: 290px;
                 }
 
                 @media (min-width: 768px) {
                     width: calc(100% - 33px);
                     padding: 122px 15px 0 20px;
+                    margin: 86px 16.5px 20px;
+                }
+
+                @media (min-width: 1280px) {
                     margin: 86px 16.5px;
                 }
 

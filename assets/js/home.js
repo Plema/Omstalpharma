@@ -1,63 +1,3 @@
-$(window).resize(function () {
-    if ($(window).width() < 1280) {
-        $('.list-product').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            appendArrows: $('.section-product .holder-btn'),
-            prevArrow: '<button type="button" id="prev-02" class="btn-arrow prev"><i class="icon-arrows" aria-hidden="true"></i></button>',
-            nextArrow: '<button type="button" id="next-02"class="btn-arrow next"><i class="icon-arrows-2" aria-hidden="true"></i></button>',
-            responsive: [{
-                    breakpoint: 560,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-            ]
-        })
-    }
-    if ($(window).width() < 1280) {
-        $('.list-news').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            appendArrows: $('.section-news .holder-btn'),
-            prevArrow: '<button type="button" id="prev-03" class="btn-arrow prev"><i class="icon-arrows" aria-hidden="true"></i></button>',
-            nextArrow: '<button type="button" id="next-03"class="btn-arrow next"><i class="icon-arrows-2" aria-hidden="true"></i></button>',
-            responsive: [{
-                    breakpoint: 560,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-            ]
-        })
-    }
-})
 
 $(document).ready(function () {
     //slider about-product
@@ -90,10 +30,12 @@ $(document).ready(function () {
         });
     });
 
+   
     //slider product
     if ($(window).width() < 1280) {
         $('.list-product').slick({
-            slidesToShow: 3,
+            // slidesToShow: 3,
+            mobileFirst: true,
             slidesToScroll: 1,
             dots: true,
             appendArrows: $('.section-product .holder-btn'),
@@ -123,7 +65,8 @@ $(document).ready(function () {
     //slider news
     if ($(window).width() < 1280) {
         $('.list-news').slick({
-            slidesToShow: 2,
+            // slidesToShow: 2,
+            mobileFirst: true,
             slidesToScroll: 1,
             dots: true,
             appendArrows: $('.section-news .holder-btn'),
@@ -133,6 +76,12 @@ $(document).ready(function () {
                     breakpoint: 560,
                     settings: {
                         slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
                     },
                 },
                 {
